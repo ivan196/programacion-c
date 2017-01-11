@@ -4,7 +4,7 @@
 int main(int argc, char* argv[]){
 
 
-	char star_wars[3];
+	char star_wars[2];
 
 	printf("dime tu nombre ");
 	scanf(" %s", star_wars);
