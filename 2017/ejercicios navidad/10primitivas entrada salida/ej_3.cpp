@@ -4,14 +4,17 @@
 int main(){
 
 
-	int numero;
+	char palabras[50];
+	char palabras1[25], palabras2[25];
 
-	printf("dime tu numero favorito: ");
-	scanf(" %i", &numero);
+	printf("dime una palabra: ");
+	scanf(" %s", palabras1);
 
-	printf("tu numero favorito es el: %i\n", numero);
+	printf("dime otra palabra: ");
+	scanf(" %s", palabras2);
 
-
+	sprintf(palabras, "%s %s", palabras1, palabras2);
+	printf("tus palabras son: %s\n", palabras);
 
 
 
