@@ -4,14 +4,17 @@
 int main(){
 
 
-	int numeros=0, muro=9999;
+	int numeros=0;
+	int menor=0;
 
-	for(int i=0; i<10; i++){
-		printf("dime tu numero: ");
-		scanf(" %i", &numeros);
-		if(numeros < muro)
-		muro = numeros;
-	}
+
+	if(i==0)
+
+	numeros<menor
+
+	if()
+
+
 	printf("el numero menor es: %i\n", muro);
 
 

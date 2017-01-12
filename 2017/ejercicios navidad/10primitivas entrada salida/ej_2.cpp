@@ -4,7 +4,7 @@
 int main(){
 
 
-	char nombre[5];
+	char nombre;
 
 	printf("dime tu nombre: ");
 	scanf(" %s", nombre);
