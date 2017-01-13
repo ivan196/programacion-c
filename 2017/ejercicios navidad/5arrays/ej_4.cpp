@@ -3,19 +3,28 @@
 
 int main(){
 
-	int x, y, z;
 
-	x = 0;
-	y = 1;
+	int fibonacci[20];
 
-	printf(" 1\n");
+	int primero=1;
+	int segundo=1;
+	int tercero=primero+segundo;
 
-	for(int i=1;i<=20;i=i+1){
-		z = x + y;
-		printf(" %i\n", z);
-		x = y;
-		y = z;
+	fibonacci[0]=primero; //1
+	fibonacci[1]=segundo; //1
+
+	for(int i=0; i<20; i++){
+		tercero=primero+segundo;
+		primero=segundo;
+		segundo=tercero;
+		fibonacci[i+2]=tercero;
+
+		printf(" %i\n", fibonacci[i]);
+
 	}
+
+
+
 
 	return EXIT_SUCCESS;
 }
