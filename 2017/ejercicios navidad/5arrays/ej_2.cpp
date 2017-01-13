@@ -11,7 +11,7 @@ int main(){
 		printf(" %i\n", cuadrado[i]);
 	}
 
-
+	printf("%i\n",cuadrado[0]);
 
 
 
