@@ -4,12 +4,14 @@
 int main(){
 
 
-	char letras[]="TRWAGMYFPDXBNJZSQVHLCKE\0";
+	char dni1[9];
+	int dni2;
 
-	printf("dime tu DNI: ");
-	sscanf(" %s", &letras);
+	printf("dime el dni: ");
+	scanf(" %s", dni1);
 
-
+	dni2=atoi(dni1);
+	printf(" %i\n", dni2);
 
 
 
