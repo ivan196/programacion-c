@@ -4,9 +4,12 @@
 int main(){
 
 
-	char palabra[]="League of Legends";
+	char *palabra[];
 
-	printf(" %s\n", palabra);
+	printf("dime tu palabra: ");
+	scanf(" %s\n", palabra);
+
+	print("tu palabra es %s\n", palabra);
 
 
 
