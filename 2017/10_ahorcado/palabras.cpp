@@ -3,7 +3,7 @@
 #include <string.h>
 #include <time.h>
 
-#define MAX 29
+#define MAX 15
 #define CANTIDAD(x) (sizeof( (x) ) / sizeof(char *) - 1)
 
 
@@ -33,7 +33,8 @@ int main(int argc, char *argv[]){
 
 	const char *elegida;
 	char adivinado[MAX];
-	int aleatorio;
+	int aleatoria;
+	int letra[1];
 
 	srand(time(NULL));
 	aleatoria = rand() % CANTIDAD(palabra);
@@ -42,14 +43,12 @@ int main(int argc, char *argv[]){
 	//strcpy(adivinado, elegida);
 	bzero(adivinado, MAX);
 
-	for(int i=0, i<(int) strlen(elegida); i++)
+	for(int i=0; i<(int) strlen(elegida); i++)
 		adivinado[i]= '-';
 
-	adivinado[1] = 'a';
 
-	printf("\t%s\n", adivinado);
-	printf("\t%s\n", elegida);
-
+	printf("%s\n", adivinado);
+	printf("%s\n", elegida);
 
 	return EXIT_SUCCESS;
 }
