@@ -1,21 +1,38 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <time.h>
 
-int main(){
+#define MAX 10
+#define CANTIDAD(X) (sizeof( (x) ) / sizeof(char *) -1)
 
 
-	char frase[f] [c],letra, palabra [f] [c]={"perro","gato","ordenador","pizarra","lapiz","carpeta"};
 
-	int cont, intentos=6, fallos=0, i, j, aciertos=0;
+const char *palabras[]={
+	"perro",
+	"gato",
+	"ordenador",
+	"lapiz",
+	"carpeta",
+	NULL
+};
 
-	printf("bienvenido al ahorcado\n");
+int main(int argc, char *argv[]){
 
-	printf("tienes 6 intentos \n");
-	
+
+
+	const char *elegida;
+	char adivina[MAX];
+	int random;
+	char letra[1];
+	int intentos = 0;
+
 	srand(time(NULL));
-	palabra=rand() % f; /*selecciona una palabra aleatoria*/
-	/*hay que escribir tantos guiones como letras haya*/
+	random = rand() % CANTIDAD(palabras);
+	elegida = palabras[random];
+
+
+
 
 
 
