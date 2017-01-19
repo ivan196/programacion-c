@@ -9,11 +9,12 @@
 
 
 const char *palabras[]={
-	"perro",
-	"gato",
+	"teclado",
+	"raton",
 	"ordenador",
-	"lapiz",
-	"carpeta",
+	"grafica",
+	"procesador",
+	"almacenamiento",
 	NULL
 };
 
