@@ -9,12 +9,12 @@
 
 
 const char *palabras[]={
-	"teclado",
-	"raton",
-	"ordenador",
-	"grafica",
-	"procesador",
-	"almacenamiento",
+	"lolicon",
+	"hentai",
+	"anime",
+	"rias",
+	"ako-nee",
+	"riko-nee",
 	NULL
 };
 
