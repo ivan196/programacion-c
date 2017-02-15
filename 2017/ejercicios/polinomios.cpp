@@ -1,24 +1,25 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define N
-
-double f(double pol[N], double x){
-
-};
-
-
 int main(int argc, char *argv[]){
 
-	double x;
+	double num[20];
 
+	int num2, x, resultado=0;
 
-	printf("dime el valor de x: ");
-	scanf(" %lf", &x);
+	//el numero de terminos de polinomio
+	printf("Números que vas a poner: ");
+	scanf(" %i", &num2);
 
+	//Guarda los numeros
+	printf("Escribe los numeros: ");
+	for(int i=0; i<num2; i++){
+		scanf(" %lf", &num[i]);
+	}
 
-
-
+	for(int i=0; i<num2; i++){
+		printf("%lf\n", num[i]);
+	}
 
 	return EXIT_SUCCESS;
 }
